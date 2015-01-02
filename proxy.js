@@ -5,8 +5,9 @@ var request = require('requestretry');
 var _ = require('lodash');
 var bodyParser = require('body-parser');
 var EventEmitter = require('events').EventEmitter;
+var unflatten = require('flat').unflatten;
 
-module.exports = function (logger) {
+module.exports = function (logger, config) {
   var app = express();
   var events = new EventEmitter();
 
@@ -14,6 +15,13 @@ module.exports = function (logger) {
   app.use(bodyParser.urlencoded({
     extended: true
   }));
+
+  if (config.unflatten) {
+    app.use(function (req, res, next) {
+      req.body = unflatten(req.body || {});
+      next();
+    });
+  }
 
   // @todo add auth ?
 

@@ -1,7 +1,7 @@
 'use strict';
 var logger = require('./logger');
 var config = require('./config')(logger);
-var pair = require('./proxy')(logger);
+var pair = require('./proxy')(logger, config.proxy);
 var proxy = pair[0];
 var events = pair[1];
 
