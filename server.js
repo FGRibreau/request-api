@@ -6,7 +6,11 @@ var proxy = pair[0];
 var events = pair[1];
 
 events.on('request', function (req) {
-  logger.log('debug', 'rqst', req.method, req.url, req.body);
+  logger.log('debug', 'rqst', {
+    method: req.method,
+    url: req.url,
+    body: req.body
+  });
 });
 
 events.on('response', function (err, resp, body, req) {
