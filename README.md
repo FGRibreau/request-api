@@ -3,7 +3,7 @@ Request API [![Deps](https://david-dm.org/FGRibreau/request-api.png)](https://da
 
 NodeJS request library as HTTP API.
 
-Disclamer: use it at your own risk, don't expose this proxy publicly.
+Disclamer: **use it at your own risk, don't expose request-api publicly**.
 
 # npm
 
@@ -12,6 +12,8 @@ npm install -g request-api
 ```
 
 # usage
+
+request-api only handle
 
 ```
 PORT=8080 request-api
