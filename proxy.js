@@ -33,7 +33,12 @@ module.exports = function (logger, config) {
       retryStrategy: request.RetryStrategies.HTTPOrNetworkError // (default) r
     }), function (err, resp, body) {
       events.emit('response', err, resp, body, req);
-      res.status(err ? 500 : 200).send(err || body);
+
+      if (err) {
+        return res.status(500).send(err);
+      }
+
+      res.set(resp.headers).status(resp.statusCode).send(body);
     });
   });
 
