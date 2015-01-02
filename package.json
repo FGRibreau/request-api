@@ -5,7 +5,7 @@
   "author": "Francois-Guillaume Ribreau <npm@fgribreau.com> (http://fgribreau.com/)",
   "main": "proxy.js",
   "bin": {
-    "request-api": "node server.js"
+    "request-api": "./bin/request-api"
   },
   "preferGlobal": true,
   "scripts": {

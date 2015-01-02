@@ -1,10 +1,9 @@
-Request API [![Deps](https://david-dm.org/FGRibreau/request-api.png)](https://david-dm.org/FGRibreau/request-api)
-[![Version](http://badge.fury.io/js/request-api.png)](https://david-dm.org/FGRibreau/request-api)
+Request API [![Deps](https://david-dm.org/FGRibreau/request-api.png)](https://david-dm.org/FGRibreau/request-api) [![Version](http://badge.fury.io/js/request-api.png)](https://david-dm.org/FGRibreau/request-api)
 ===========
 
 NodeJS request library as HTTP API.
 
-Disclamer: know what you are doing.
+Disclamer: use it at your own risk, don't expose this proxy publicly.
 
 # npm
 
@@ -12,7 +11,7 @@ Disclamer: know what you are doing.
 npm install -g request-api
 ```
 
-# Usage
+# usage
 
 ```
 PORT=8080 request-api
