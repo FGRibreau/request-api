@@ -22,5 +22,5 @@ curl -XPOST --data '{"url":"http://api.randomuser.me/", "method":"POST"}' 127.0.
 ```
 
 <p align="center">
-<img style="width:100%" src="./docs/Thumbs-Up-Gif.gif"/>
+<img style="width:100%" src="./docs/gif.gif"/>
 </p>
